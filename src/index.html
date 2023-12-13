@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="/src/css/todoStyle.css" />
+    <script src="todo.js" defer></script>
+    <script src="editDescription.js" defer></script>
+</head>
+<body class="bFlexContainer">
+    <div class="createTaskDiv" id="activeClick">
+        <p>+ Create Task</p>
+        <div class="taskCreationDiv">
+            <p></p>
+            <input type="text" autocomplete="false" placeholder="Enter Todo Title" id="triggerDiv"/>
+            <input type="date"/>
+            <button class="addToList">Add to list</button>
+        </div>
+    </div>
+    <ul id="todoList"></ul>
+    <div class="popupBackground">
+        <div class="popupContent">
+            <textarea id="popupText" maxlength="150"></textarea>
+            <button id="addCheckList">Add Checklist</button>
+            <div id="checkboxContainer"></div>
+        </div>
+    </div> 
+</body>
+</html>
