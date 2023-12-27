@@ -63,7 +63,7 @@ function createTabElements(index, title, date)
     let deleteB = document.createElement('img');
 
     deleteB.setAttribute('id', 'trash');
-    deleteB.setAttribute('src', '/images/trashcan.png');
+    deleteB.setAttribute('src', '../images/trashcan.png');
 
     todoTab.setAttribute('id', index + 'todoTab');
     tabTitle.innerHTML = title;
